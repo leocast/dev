@@ -11,7 +11,7 @@ console.log(planetDiv);
 
 
 //change background color of .planet
-planetDiv.style.backgroundColor = "#00ff00";
+planetDiv.style.background = "radial-gradient(circle farthest-side at 75px 85px, red, orange)";
 
 //append the planetDiv to the body in the DOM
 document.body.appendChild(planetDiv);
@@ -30,3 +30,13 @@ console.log(moonDiv);
 
 //append the moonDiv to planetDiv
 planetDiv.appendChild(moonDiv);
+
+
+
+{
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(circle, red, yellow, green); /* Safari */
+  background: -o-radial-gradient(circle, red, yellow, green); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, red, yellow, green); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle, red, yellow, green); /* Standard syntax */
+}
