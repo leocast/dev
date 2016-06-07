@@ -4,7 +4,7 @@ var naiveMelody = new Song("Naive Melody (This Must Be the Place)", "Talking Hea
 var londonCalling = new Song("London Calling", "The Clash", "3:45");
 var waitSoLong = new Song("Wait So Long", "Trampled By Turtles,", "3:26");
 
-var starWars = new Movie("Star Wars", "1977", "2:15:00");
+var starWars = new Movie("Star Wars", 1977, "2:15:00");
 
 playlist.add(naiveMelody);
 playlist.add(londonCalling);
@@ -19,16 +19,16 @@ var playButton = document.getElementById("play");
 playButton.onclick = function() {
 	playlist.play();
 	playlist.renderInElement(playlistElement);
-}
+};
 
 var nextButton = document.getElementById("next");
 nextButton.onclick = function() {
 	playlist.next();
 	playlist.renderInElement(playlistElement);
-}
+};
 
 var stopButton = document.getElementById("stop");
 stopButton.onclick = function() {
 	playlist.stop();
 	playlist.renderInElement(playlistElement);
-}
+};

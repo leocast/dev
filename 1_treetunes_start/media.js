@@ -6,7 +6,7 @@ function Media(title, duration) {
 }
 
 Media.prototype.play = function() {
-	this.isPlaying - true;
+	this.isPlaying = true;
 };
 
 Media.prototype.stop = function() {
