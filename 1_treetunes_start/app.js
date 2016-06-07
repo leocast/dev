@@ -4,9 +4,12 @@ var naiveMelody = new Song("Naive Melody (This Must Be the Place)", "Talking Hea
 var londonCalling = new Song("London Calling", "The Clash", "3:45");
 var waitSoLong = new Song("Wait So Long", "Trampled By Turtles,", "3:26");
 
+var starWars = new Movie("Star Wars", "1977", "2:15:00");
+
 playlist.add(naiveMelody);
 playlist.add(londonCalling);
 playlist.add(waitSoLong);
+playlist.add(starWars);
 
 var playlistElement = document.getElementById("playlist");
 
